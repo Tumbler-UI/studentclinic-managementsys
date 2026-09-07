@@ -1,25 +1,37 @@
-// App.js
-import React from 'react';
-import './App.css';
-import Header from './components/Header/Header';
-import DevelopmentTimeline from './components/DevelopmentTimeline/DevelopmentTimeline';
-import TechnologyShowcase from './components/TechnologyShowcase/TechnologyShowcase';
-import Gallery from './components/Gallery/Gallery';
-import ContactInvest from './components/ContactInvest/ContactInvest';
-import Footer from './components/Footer/Footer';
+import { Routes, Route } from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+import Home from "./pages/Home";
+import Explore from "./components/Explore";
+import SiteDetails from "./pages/SiteDetails";
+
+import "./styles/global.css";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <main>
-        <DevelopmentTimeline />
-        <TechnologyShowcase />
-        <Gallery />
-        <ContactInvest />
-      </main>
-      <Footer />
-    </div>
+    <>
+      <Navbar />
+
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/explore"
+          element={<Explore />}
+        />
+
+        <Route
+          path="/sites/:slug"
+          element={<SiteDetails />}
+        />
+
+      </Routes>
+    </>
   );
 }
 
