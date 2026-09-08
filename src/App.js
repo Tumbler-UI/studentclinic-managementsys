@@ -52,15 +52,13 @@ function App() {
           path="/about"
           element={<About />}
         />
-                  
-        <Route
-          
-          element={<Footer />}
-        />
+        
 
 
 
       </Routes>
+
+      <Footer />
     </>
   );
 }
