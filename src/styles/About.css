@@ -1,0 +1,55 @@
+.about-page {
+  width: min(1100px, 92%);
+  margin: auto;
+
+  padding: 90px 0;
+}
+
+.about-header {
+  max-width: 750px;
+}
+
+.about-header h1 {
+  font-size: 56px;
+}
+
+.about-header p:last-child {
+  color: #666;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+  margin-top: 70px;
+}
+
+.about-grid div {
+  padding: 30px;
+
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.about-grid h2 {
+  color: #17823b;
+}
+
+.about-grid p {
+  color: #666;
+
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}

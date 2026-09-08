@@ -1,0 +1,90 @@
+.planner-page {
+  width: min(1200px, 92%);
+  margin: auto;
+
+  padding: 70px 0;
+}
+
+.planner-header {
+  max-width: 750px;
+
+  margin-bottom: 50px;
+}
+
+.planner-header h1 {
+  font-size: 50px;
+}
+
+.planner-header p:last-child {
+  color: #666;
+  font-size: 18px;
+}
+
+.planner-content {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr;
+
+  gap: 40px;
+}
+
+.planner-sites {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 15px;
+}
+
+.planner-site {
+  padding: 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 10px;
+
+  background: white;
+
+  text-align: left;
+
+  cursor: pointer;
+}
+
+.planner-site strong,
+.planner-site span {
+  display: block;
+}
+
+.planner-site span {
+  margin-top: 5px;
+  color: #777;
+}
+
+.planner-site.selected {
+  border-color: #17823b;
+
+  background: #f0f8f2;
+}
+
+.itinerary {
+  padding: 25px;
+
+  border-radius: 12px;
+
+  background: #f7f7f7;
+}
+
+.itinerary li {
+  margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+
+  .planner-content {
+    grid-template-columns: 1fr;
+  }
+
+  .planner-sites {
+    grid-template-columns: 1fr;
+  }
+}

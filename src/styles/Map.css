@@ -1,0 +1,22 @@
+.map-page {
+  width: min(1200px, 92%);
+  margin: auto;
+
+  padding: 60px 0;
+}
+
+.map-header {
+  margin-bottom: 30px;
+}
+
+.map-header h1 {
+  margin: 10px 0;
+
+  font-size: 48px;
+}
+
+.map-header p:last-child {
+  color: #666;
+
+  font-size: 18px;
+}
