@@ -7,7 +7,7 @@ function Navbar() {
       <div className="nav-container">
 
         <Link to="/" className="logo">
-          Explore<span>KE</span>
+          Roam<span>KE</span>
         </Link>
 
         <div className="nav-links">
